@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Khoa Pham WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+        <script src="socket.io.js"></script>
+    </head>
+    <body>
+        <div id="div-chat">
+            <p>Online user:</p>
+            <ul id="ulUser">
+            </ul>
+            <h3 id="my-peer">Your Id: </h3>
+            <div id="chat-to" style="color: cyan; font-weight: bold;"></div>
+            <div id="chat-box" style="width: 200px; height: 200px; border: 2px solid;">
+            </div>
+            <br>
+            <input type="text" id="messages" placeholder="Enter your messages" style="background-color: gray; color: white;">
+            <button id="send">send</button>
+            <br>
+            <input type="file" id="file-upload">
+            <button id="send-file">send-file</button>
+
+            <input type="text" id="id-connect">
+            <button id="connect">connect</button>
+        </div>
+        <div id="div-dang-ky">
+            <br /><br />
+            <input type="text" id="txtUsername-dangky" placeholder="Enter your username">
+            <input type="text" id="txtPassword-dangky" placeholder="Enter your password">
+            <button id="btnSignUp">Sign Up</button>
+        </div>
+        <div id="div-dang-nhap">
+            <br /><br />
+            <input type="text" id="txtUsername-dangnhap" placeholder="Enter your username">
+            <input type="text" id="txtPassword-dangnhap" placeholder="Enter your password">
+            <button id="btnLogin">Login</button>
+    </body>
+    <script src="main.js"></script>
+</html>
